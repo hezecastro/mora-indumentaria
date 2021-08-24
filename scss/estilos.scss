@@ -1,0 +1,47 @@
+@import "colores";
+@import "pages/catalogo";
+@import "pages/index";
+@import "pages/login";
+@import "pages/ayuda";
+@import "pages/404";
+@import "componentes/botones";
+@import "componentes/header";
+@import "componentes/footer";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf)
+}
+
+body {
+    background-image: url(../images/fondo.png);
+    background-color: #fff;
+    font-size: 1.8rem;
+    font-family: montserrat;
+    line-height: 1.3;
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+    &:hover{
+        color:black;
+    }
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}

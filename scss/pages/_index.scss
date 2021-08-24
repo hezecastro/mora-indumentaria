@@ -1,0 +1,40 @@
+/* ARTICLE */
+
+.destacados {
+    width: 30rem;
+    margin: 1px;
+    transition: width 0.3s;
+        &:hover {
+        opacity: 0.85;
+        }
+}
+
+.portada {
+    width: 39rem;
+    margin: 1px;
+}
+
+.galeria {
+    font-size: 3rem;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main__h1 {
+    color: $rosa-main
+}
+
+.main__h2 {
+    color: $rosa-second
+}
+
+.sticky-bottom {
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 1020;
+}

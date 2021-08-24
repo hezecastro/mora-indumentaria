@@ -1,0 +1,57 @@
+//VARIABLES
+
+@mixin botones ($bg, $border) {
+    color: #fff;
+    background-color: $bg;
+    border-color: $border;
+}
+
+@mixin botones-outline ($c, $border) {
+    color: $c;
+    border-color: $border;
+}
+
+@mixin botones-outline-hover ($bg) {
+    background-color: $bg;
+    color: #fff;
+}
+
+$tema-colores:(
+    rosa: $rosa-main,
+    rosaFuerte: $rosa-second,
+    salmon: $salmon,
+);
+
+$tema-colores-hover:(
+    rosa: $rosa-main--hover,
+);
+
+//BOTONES NORMALES
+
+@each $color, $valor in $tema-colores {
+    .btn-#{$color} {
+        @include botones($valor, $valor)
+    }
+    // .btn-#{$color}:hover {
+    //     @include botones ($valor, $valor)
+    //     opacity: 0.9;
+    // }
+}
+
+@each $color, $valor in $tema-colores-hover {
+    .btn-#{$color}:hover {
+        @include botones($valor, $valor)
+    }
+}
+
+//BOTONES BORDEADOS
+
+@each $color, $valor in $tema-colores {
+    .btn-outline-#{$color} {
+        @include botones-outline($valor, $valor)
+    }
+    .btn-outline-#{$color}:hover {
+        @include botones-outline-hover($valor)
+    }
+}
+

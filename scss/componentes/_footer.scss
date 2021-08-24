@@ -1,0 +1,29 @@
+footer {
+    background-color: white;
+}
+
+.flexFooter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+.footer__iconos {
+    font-size: 3rem;
+    &:hover {
+        color: black;
+    }
+}
+
