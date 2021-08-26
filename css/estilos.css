@@ -190,6 +190,20 @@ footer {
   color: black;
 }
 
+#footer__primer-fila a {
+  --bs-text-opacity: 1;
+  color: #6c757d;
+}
+
+#footer__primer-fila a:hover {
+  color: black;
+}
+
+#footer__primer-fila p {
+  --bs-text-opacity: 1;
+  color: #6c757d;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
