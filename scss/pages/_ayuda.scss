@@ -5,5 +5,11 @@
     h3 {
         color: $rosa-third;
     }
+    a {
+        color: $rosa-main;
+        &:hover{
+            color: black;
+        }
+    }
 }
 

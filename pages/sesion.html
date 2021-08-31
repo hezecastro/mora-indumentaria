@@ -101,25 +101,42 @@
 
 <!-- FORM -->
 
-    <section class="login mx-4 mx-sm-auto">
+    <main class="form-signin">
 
-        <h1>Ingresar</h1>
+        <form method="GET">
 
-        <form class="m-4" action="" method="GET">
+            <h1 class="mb-3 text-center display-5">Ingresar</h1>
 
-            <label for="email">Correo electrónico</label><br>
-            <input type="email" name="email" id="email" required><br>
+            <div class="form-floating mb-3">
 
-            <label for="contra">Contraseña</label><br>
-            <input type="password" id="contra" name="contra" required><br><br>
+                <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" name="email">
+                <label class="mb-5" for="floatingInput">Email</label>
 
-            <button class="btn btn-lg btn-rosa" type="submit">Entrar</button> <br><br>
-            
-            <p>¿No estás registrado? <a href="registro.html">Registrate aquí</a></p>
+            </div>
+
+            <div class="form-floating mb-3">
+
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" name="password">
+                <label for="floatingPassword">Contraseña</label>
+
+            </div>
+        
+            <div class="checkbox mb-3 fs-4">
+
+                <label>
+                    <input type="checkbox" name="newsletter"> Recordarme en este equipo.
+                </label>
+
+            </div>
+
+            <button class="w-100 btn btn-lg btn-rosa" type="submit">Iniciar sesión</button>
+            <p class="my-3 fs-4">¿No tenés una cuenta? <a href="registro.html">Crear cuenta</a></p>
 
         </form>
 
-    </section>
+    </main>
+    
+        </body>
 
     <!-- FOOTER -->
 
@@ -127,7 +144,9 @@
 
         <div class="py-5 my-4 container">
     
-            <div id="footer__primer-fila" class="row">
+            <!-- PRIMER FILA -->
+    
+            <div id="footer__primer-fila" class="row ps-4 ps-sm-0">
     
                 <div class="col-6 col-lg-2 mb-4">
     
@@ -140,11 +159,11 @@
                         </li>
     
                         <li class="mb-2">
-                            <a href="catalogo.html">Catálogo</a>
+                            <a href="../pages/catalogo.html">Catálogo</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html">Ayuda</a>
+                            <a href="../pages/ayuda.html">Ayuda</a>
                         </li>
     
                     </ul>
@@ -158,15 +177,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="hombre.html">Hombre</a>
+                            <a href="../pages/hombre.html">Hombre</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="mujer.html">Mujer</a>
+                            <a href="../pages/mujer.html">Mujer</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="niño.html">Niños</a>
+                            <a href="../pages/niño.html">Niños</a>
                         </li>
     
                     </ul>
@@ -180,15 +199,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="ayuda.html#preguntasFrecuentes">FAQ</a>
+                            <a href="../pages/ayuda.html#preguntasFrecuentes">FAQ</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html#formasDePago">Formas de pago</a>
+                            <a href="../pages/ayuda.html#formasDePago">Formas de pago</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html#devoluciones">Devoluciones</a>
+                            <a href="../pages/ayuda.html#devoluciones">Devoluciones</a>
                         </li>
     
                     </ul>
@@ -202,15 +221,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="registro.html">Mi cuenta</a>
+                            <a href="../pages/registro.html">Mi cuenta</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="404.html">Carrito</a>
+                            <a href="../pages/404.html">Carrito</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="404.html">Lista de deseos</a>
+                            <a href="../pages/404.html">Lista de deseos</a>
                         </li>
     
                     </ul>
@@ -238,6 +257,8 @@
                 </div>
     
             </div>
+    
+            <!-- SEGUNDA FILA -->
     
             <div class="row">
     
@@ -268,6 +289,8 @@
                 </div>
     
             </div>
+    
+            <!-- TERCER FILA -->
     
             <div class="row border-top my-3 py-3">
     

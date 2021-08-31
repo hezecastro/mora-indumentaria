@@ -29,14 +29,12 @@ footer {
 
 #footer__primer-fila{
     a{
-        --bs-text-opacity: 1;
-        color: #6c757d;
+        color: $gris;
         &:hover{
             color:black;
         }
     }
     p{
-        --bs-text-opacity: 1;
-        color: #6c757d;
+        color: $gris;
     }
 }

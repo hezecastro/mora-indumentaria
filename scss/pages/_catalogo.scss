@@ -2,3 +2,33 @@
     margin: 5px;
     width: 18rem;
 }
+
+#filtros-catalogo {
+    p {
+        color: $rosa-third;
+    }
+    h3 {
+        color: $rosa-second;
+    }
+}
+
+.form-check-label {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.form-check-input {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 768px) {
+    #filtros-catalogo {
+        display: block;
+    }
+    #filtrar-btn {
+        display: none;
+    }
+}

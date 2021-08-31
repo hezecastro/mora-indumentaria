@@ -101,57 +101,63 @@
 
     <!-- FORM -->
 
-    <section class="login mx-4 mx-sm-auto">
+    <main class="form-signin">
 
-        <h1>Registrarse</h1>
+        <form method="GET">
 
-        <form class="m-4" action="" method="GET">
+            <h1 class="mb-3 text-center display-5">Crear cuenta</h1>
 
-            <label for="name">Nombre y apellido</label> <br>
-            <input type="text" id="name" name="nombre" required><br>
+            <div class="form-floating mb-3">
 
-            <label for="email">Correo electrónico</label><br>
-            <input type="email" name="email" id="email" required><br>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre y apellido" name="name" required>
+                <label class="mb-5" for="nombre">Nombre completo</label>
 
-            <label>Fecha de nacimiento<br>
-                <input type="date" name="nacimiento" required>
-            </label> <br>
+            </div>
 
-            <label>Género <br>
+            <div class="form-floating mb-3">
 
-                <select name="genero">
+                <input type="email" class="form-control" id="floatingInput" placeholder="nombre@ejemplo.com" name="email" required>
+                <label class="mb-5" for="floatingInput">Email</label>
 
-                    <option value="no especifica">---</option>
-                    <option value="hombre">Hombre</option>
-                    <option value="mujer">Mujer</option>
-                    <option value="no especifica">Prefiero no decirlo</option>
+            </div>
 
-                </select>
+            <div class="form-floating mb-3">
 
-            </label><br>
+                <input type="text" class="form-control" id="phone" placeholder="1123344556" name="phone">
+                <label class="mb-5" for="phone">Teléfono (opcional)</label>
 
-            <label for="contra">Contraseña</label><br>
-            <input type="password" id="contra" name="contra" required><br><br>
+            </div>
 
-            <label>¿Desea recibir el newsletter?
-                <input type="checkbox" name="news" checked>
-            </label><br>
+            <div class="form-floating mb-3">
 
-            <button class="btn btn-lg btn-rosa" type="submit">Registrarse</button> <br>
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña" name="password" required>
+                <label for="floatingPassword">Contraseña</label>
 
-            <p>¿Ya tienes una cuenta? <a href="sesion.html">Entra aquí</a></p>
-            
+            </div>
+        
+            <div class="checkbox mb-3 fs-4">
+
+                <label>
+                    <input type="checkbox" name="newsletter" checked> ¿Desea recibir el newsletter?
+                </label>
+
+            </div>
+
+            <button class="w-100 btn btn-lg btn-rosa" type="submit">Crear cuenta</button>
+            <p class="my-3 fs-4">¿Ya tenés una cuenta? <a href="sesion.html">Iniciá sesión</a></p>
+
         </form>
 
-    </section>
-    
+    </main>
     <!-- FOOTER -->
 
     <footer class="py-3 mt-4 border-top">
 
         <div class="py-5 my-4 container">
     
-            <div id="footer__primer-fila" class="row">
+            <!-- PRIMER FILA -->
+    
+            <div id="footer__primer-fila" class="row ps-4 ps-sm-0">
     
                 <div class="col-6 col-lg-2 mb-4">
     
@@ -164,11 +170,11 @@
                         </li>
     
                         <li class="mb-2">
-                            <a href="catalogo.html">Catálogo</a>
+                            <a href="../pages/catalogo.html">Catálogo</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html">Ayuda</a>
+                            <a href="../pages/ayuda.html">Ayuda</a>
                         </li>
     
                     </ul>
@@ -182,15 +188,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="hombre.html">Hombre</a>
+                            <a href="../pages/hombre.html">Hombre</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="mujer.html">Mujer</a>
+                            <a href="../pages/mujer.html">Mujer</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="niño.html">Niños</a>
+                            <a href="../pages/niño.html">Niños</a>
                         </li>
     
                     </ul>
@@ -204,15 +210,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="ayuda.html#preguntasFrecuentes">FAQ</a>
+                            <a href="../pages/ayuda.html#preguntasFrecuentes">FAQ</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html#formasDePago">Formas de pago</a>
+                            <a href="../pages/ayuda.html#formasDePago">Formas de pago</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="ayuda.html#devoluciones">Devoluciones</a>
+                            <a href="../pages/ayuda.html#devoluciones">Devoluciones</a>
                         </li>
     
                     </ul>
@@ -226,15 +232,15 @@
                     <ul class="list-unstyled fs-4">
     
                         <li class="mb-2">
-                            <a href="registro.html">Mi cuenta</a>
+                            <a href="../pages/registro.html">Mi cuenta</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="404.html">Carrito</a>
+                            <a href="../pages/404.html">Carrito</a>
                         </li>
     
                         <li class="mb-2">
-                            <a href="404.html">Lista de deseos</a>
+                            <a href="../pages/404.html">Lista de deseos</a>
                         </li>
     
                     </ul>
@@ -262,6 +268,8 @@
                 </div>
     
             </div>
+    
+            <!-- SEGUNDA FILA -->
     
             <div class="row">
     
@@ -292,6 +300,8 @@
                 </div>
     
             </div>
+    
+            <!-- TERCER FILA -->
     
             <div class="row border-top my-3 py-3">
     
