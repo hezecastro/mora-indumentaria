@@ -48,12 +48,6 @@
     z-index: 1020;
 }
 
-.principal {
-    background-image: url("../../images/roses.jpg");
-    background-size: cover;
-    height: 70vh;
-}
-
 /* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
@@ -80,17 +74,17 @@
 
 .foto {
     @include carrusel;
-    background-image: url(../../images/main1.jpg);
+    background-image: url("../images/main1.jpg");
 }
 
 .foto1 {
     @include carrusel;
-    background-image: url(../../images/main.jpg);
+    background-image: url("../images/main.jpg");
 }
 
 .foto2 {
     @include carrusel;
-    background-image: url(../../images/main2.jpg);
+    background-image: url("../images/main2.jpg");
 }
 
 #myCarousel svg {
