@@ -1,4 +1,13 @@
-/* ARTICLE */
+@mixin carrusel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @media (max-width: 767.98px) {
+        background-position: center;
+    }
+}
+
+// ----------- //
 
 .destacados {
     width: 30rem;
@@ -10,8 +19,8 @@
 }
 
 .portada {
-    width: 39rem;
-    margin: 1px;
+    width: 39px;
+    height: 70vh;
 }
 
 .galeria {
@@ -37,4 +46,59 @@
     bottom: 1rem;
     right: 1rem;
     z-index: 1020;
+}
+
+.principal {
+    background-image: url("../../images/roses.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 73.3vh;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+// Carrusel imágenes
+
+.foto {
+    @include carrusel;
+    background-image: url(../../images/main1.jpg);
+}
+
+.foto1 {
+    @include carrusel;
+    background-image: url(../../images/main.jpg);
+}
+
+.foto2 {
+    @include carrusel;
+    background-image: url(../../images/main2.jpg);
+}
+
+#myCarousel svg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+}
+
+.carousel-caption {
+    bottom: 12rem;
 }

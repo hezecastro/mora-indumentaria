@@ -9,6 +9,7 @@
 @mixin botones-outline ($c, $border) {
     color: $c;
     border-color: $border;
+    background: #fff;
 }
 
 @mixin botones-outline-hover ($bg) {
@@ -32,15 +33,15 @@ $tema-colores-hover:(
     .btn-#{$color} {
         @include botones($valor, $valor)
     }
-    // .btn-#{$color}:hover {
-    //     @include botones ($valor, $valor)
-    //     opacity: 0.9;
-    // }
+    .btn-#{$color}:hover {
+        @include botones-outline($valor, $valor)
+    }
 }
 
-@each $color, $valor in $tema-colores-hover {
-    .btn-#{$color}:hover {
-        @include botones($valor, $valor)
+.btn-dark {
+    &:hover {
+        color: black;
+        background-color: #fff;
     }
 }
 
