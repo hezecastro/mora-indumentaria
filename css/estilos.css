@@ -90,7 +90,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 73.3vh;
+  height: 78.2vh;
 }
 
 .carousel-item > img {
@@ -148,6 +148,31 @@
 
 .carousel-caption {
   bottom: 12rem;
+}
+
+@media (max-width: 991.98px) and (orientation: landscape) {
+  .carousel-caption {
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .xs {
+    right: 2.5rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .md-hide-down {
+    display: none;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .md-hide-up {
+    display: none;
+  }
 }
 
 .login {
@@ -298,7 +323,7 @@ header {
 }
 
 .header__logo {
-  height: 15rem;
+  height: 12rem;
 }
 
 footer {

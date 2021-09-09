@@ -14,7 +14,7 @@
     
     <meta name="keywords" content="TIENDA, ONLINE, ROPA, INDUMENTARIA, MODA, TEMPORADA, TENDENCIA">
 
-    <link rel="icon" href="images/logo.png" size="any">
+    <link rel="icon" href="images/logovector.svg" size="any">
 
     <title>Mora Indumentaria | Tienda Online</title>
 
@@ -32,69 +32,121 @@
 
 <!-- HEADER -->
 
-    <header id="uno" class="animate__animated animate__fadeInDown animate__slow border-bottom">
+    <header class="border-bottom">
 
-        <div class="animate__animated animate__fadeInDown animate__slow container">
+        <nav class="navbar-expand-md navbar navbar-light">
 
-            <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
 
-                <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
 
-                        <a class="navbar-brand" href="index.html"> 
-                            <img class="header__logo" src="./images/logo.png" alt=""> 
-                        </a>
+                    <img class="img-fluid header__logo" src="images/logovector.svg" alt="Logotipo de Mora Indumentaria">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                </a>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
+
+                    <div class="offcanvas-header">
+
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body">
+                        
+                        <ul class=" navbar-nav justify-content-start flex-grow-1 pe-3">
 
                             <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
                                 <a class="nav-link" href="pages/hombre.html">Hombre</a>
+
                             </li>
 
                             <li class="nav-item">
+
                                 <a class="nav-link" href="pages/mujer.html">Mujer</a>
+
                             </li>
 
                             <li class="nav-item">
+
                                 <a class="nav-link" href="pages/niño.html">Niños</a>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Perfil
-                            </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                                    <li>
-                                        <a class="dropdown-item" href="pages/sesion.html">Iniciar sesion</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a class="dropdown-item" href="pages/registro.html">Registrarse</a>
-                                    </li>
-
-                                </ul>
 
                             </li>
+                            
+                        </ul>
 
+                        <hr class="dropdown-divider">
+
+                        <ul class="mb-3 mb-md-0 fs-3 navbar-nav justify-content-md-end flex-grow-1 pe-3">
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="pages/favoritos.html">
+
+                                    <i class="bi bi-star"></i>
+
+                                    <span class="md-hide-up">Lista de deseos</span>
+
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item mx-md-3">
+
+                                <a class="nav-link" href="pages/cart.html">
+
+                                    <i class="bi bi-cart2"></i>
+
+                                    <span class="md-hide-up">Carrito</span>
+
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="pages/sesion.html">
+
+                                    <i class="bi bi-person-circle"></i>
+
+                                    <span class="md-hide-up">Mi cuenta</span>
+
+                                </a>
+
+                            </li>
+                        
                         </ul>
 
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
-                            <button class="btn btn-outline-rosa" type="submit">Buscar</button>
+
+                            <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+
+                            <button class="btn btn-rosa" type="submit">Buscar</button>
+
                         </form>
-                        
-                        </div>
+
+                    </div>
+
                 </div>
 
-            </nav>
+            </div>
 
-        </div>
+        </nav>
 
     </header>
 
@@ -124,7 +176,7 @@
 
                         <div class="carousel-caption">
 
-                            <h1 class="display-1">Mora Indumentaria</h1>
+                            <h1 class="display-1 xs">Mora Indumentaria</h1>
                             <p class="fs-2">La mejor ropa, al mejor precio</p>
                             <p> <a class="fs-4 btn btn-dark" href="pages/catalogo.html">Ver catálogo</a> </p>
 
@@ -172,20 +224,20 @@
 
             </div>
 
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <button class="carousel-control-prev md-hide-down" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 
-            <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Previous</span>
 
             </button>
             
 
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <button class="carousel-control-next md-hide-down" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
 
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
 
-            <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Next</span>
 
             </button>
 
@@ -357,7 +409,7 @@
                 <ul class="list-unstyled fs-4">
 
                     <li class="mb-2">
-                        <a href="pages/registro.html">Mi cuenta</a>
+                        <a href="pages/sesion.html">Mi cuenta</a>
                     </li>
 
                     <li class="mb-2">

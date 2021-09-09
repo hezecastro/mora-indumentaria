@@ -32,70 +32,121 @@
     
     <!-- HEADER -->
     
-    <header id="uno" class="border-bottom">
+    <header class="border-bottom">
 
-        <div class="container">
+        <nav class="navbar-expand-md navbar navbar-light">
     
-            <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container">
     
-                <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
     
-                        <a class="navbar-brand" href="../index.html"> 
-                            <img class="header__logo" src="../images/logo.png" alt="Logo de Mora Indumentaria"> 
-                        </a>
+                    <img class="img-fluid header__logo" src="../images/logovector.svg" alt="Logotipo de Mora Indumentaria">
     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                </a>
     
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
     
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
+    
+                    <div class="offcanvas-header">
+    
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+    
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+                    </div>
+    
+                    <div class="offcanvas-body">
+                        
+                        <ul class=" navbar-nav justify-content-start flex-grow-1 pe-3">
     
                             <li class="nav-item">
+    
+                                <a class="nav-link" href="../index.html">Inicio</a>
+    
+                            </li>
+    
+                            <li class="nav-item">
+    
                                 <a class="nav-link" href="hombre.html">Hombre</a>
+    
                             </li>
     
                             <li class="nav-item">
-                                <a class="nav-link" href="mujer.html">Mujer</a>
+    
+                                <a class="nav-link active" aria-current="page" href="mujer.html">Mujer</a>
+    
                             </li>
     
                             <li class="nav-item">
+    
                                 <a class="nav-link" href="niño.html">Niños</a>
-                            </li>
     
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Perfil
+                            </li>
+                            
+                        </ul>
+    
+                        <hr class="dropdown-divider">
+    
+                        <ul class="mb-3 mb-md-0 fs-3 navbar-nav justify-content-md-end flex-grow-1 pe-3">
+    
+                            <li class="nav-item">
+    
+                                <a class="nav-link" href="favoritos.html">
+    
+                                    <i class="bi bi-star"></i>
+    
+                                    <span class="md-hide-up">Lista de deseos</span>
+    
                                 </a>
     
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            </li>
     
-                                    <li>
-                                        <a class="dropdown-item" href="sesion.html">Iniciar sesion</a>
-                                    </li>
-                                    
-                                    <li>
-                                        <a class="dropdown-item" href="registro.html">Registrarse</a>
-                                    </li>
+                            <li class="nav-item mx-md-3">
     
-                                </ul>
+                                <a class="nav-link" href="cart.html">
+    
+                                    <i class="bi bi-cart2"></i>
+    
+                                    <span class="md-hide-up">Carrito</span>
+    
+                                </a>
     
                             </li>
     
+                            <li class="nav-item">
+    
+                                <a class="nav-link" href="sesion.html">
+    
+                                    <i class="bi bi-person-circle"></i>
+    
+                                    <span class="md-hide-up">Mi cuenta</span>
+    
+                                </a>
+    
+                            </li>
+                        
                         </ul>
     
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
-                            <button class="btn btn-outline-rosa" type="submit">Buscar</button>
+    
+                            <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
+    
+                            <button class="btn btn-rosa" type="submit">Buscar</button>
+    
                         </form>
-                        
-                        </div>
+    
+                    </div>
+    
                 </div>
     
-            </nav>
+            </div>
     
-        </div>
+        </nav>
     
     </header>
 

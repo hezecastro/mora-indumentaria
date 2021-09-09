@@ -60,7 +60,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 73.3vh;
+    height: 78.2vh;
 }
 .carousel-item > img {
     position: absolute;
@@ -95,4 +95,26 @@
 
 .carousel-caption {
     bottom: 12rem;
+    @media (max-width: 991.98px) and (orientation: landscape) {
+        bottom: 1rem;
+    }
+}
+
+.xs {
+    @media (max-width: 350px) {
+        right: 2.5rem;
+        position: relative;
+    }
+}
+
+.md-hide-down {
+    @media (max-width: 767.98px) {
+        display: none;
+    }
+}
+
+.md-hide-up {
+    @media (min-width: 767.98px) {
+        display: none;
+    }
 }
