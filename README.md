@@ -12,7 +12,6 @@ Página web de la tienda online Mora Indumentaria, proyecto realizado en el curs
 - HTML
 - SCSS
 - [Bootstrap](https://getbootstrap.com/)
-- [WOW](https://wowjs.uk/)
 
 ## Licencia
 [MIT](https://choosealicense.com/licenses/mit/)
