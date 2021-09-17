@@ -1,26 +1,10 @@
-#articulos-catalogo .card, #catalogo-mas .card {
-    margin: 5px;
-    width: 18rem;
-}
 
 #filtros-catalogo {
-    p {
-        color: $rosa-third;
-    }
-    h3 {
-        color: $rosa-second;
-    }
-}
-
-.form-check-label {
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.form-check-input {
-    &:hover {
-        cursor: pointer;
+    a {
+        color: $gris;
+        &:hover{
+            color:black;
+        }
     }
 }
 
@@ -32,3 +16,25 @@
         display: none;
     }
 }
+
+.card:hover img{
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    opacity: 0.5;
+}
+
+.card:hover{
+    box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+}
+
+.card {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+

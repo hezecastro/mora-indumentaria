@@ -14,11 +14,11 @@
         
         <meta name="keywords" content="TIENDA, ONLINE, ROPA, INDUMENTARIA, MODA, TEMPORADA, TENDENCIA, MUJER, WOMAN, MAMA">
     
-        <link rel="icon" href="../images/logo.png" size="any">
+        <link rel="icon" href="../images/logovector.svg" size="any">
     
         <title>Mujer | Mora Indumentaria</title>
     
-        <link rel="stylesheet" href="../css/animate.css">
+        
 
         <link rel="stylesheet" href="../css/bootstrap-icons.css">
     
@@ -34,7 +34,7 @@
     
     <header class="border-bottom">
 
-        <nav class="navbar-expand-md navbar navbar-light">
+        <nav class="navbar-expand-lg navbar navbar-light">
     
             <div class="container">
     
@@ -100,19 +100,19 @@
     
                                     <i class="bi bi-star"></i>
     
-                                    <span class="md-hide-up">Lista de deseos</span>
+                                    <span class="lg-hide-up">Lista de deseos</span>
     
                                 </a>
     
                             </li>
     
-                            <li class="nav-item mx-md-3">
+                            <li class="nav-item mx-lg-2">
     
                                 <a class="nav-link" href="cart.html">
     
                                     <i class="bi bi-cart2"></i>
     
-                                    <span class="md-hide-up">Carrito</span>
+                                    <span class="lg-hide-up">Carrito</span>
     
                                 </a>
     
@@ -124,7 +124,7 @@
     
                                     <i class="bi bi-person-circle"></i>
     
-                                    <span class="md-hide-up">Mi cuenta</span>
+                                    <span class="lg-hide-up">Mi cuenta</span>
     
                                 </a>
     
@@ -132,7 +132,7 @@
                         
                         </ul>
     
-                        <form class="d-flex">
+                        <form class="d-flex mt-1">
     
                             <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
     
@@ -161,388 +161,437 @@
                     <li class="breadcrumb-item active" aria-current="page">Mujer</li>
                 </ol>
             </nav>
+
             <h1 class="display-2">Productos</h1>
+
             <div>
-                <button class="btn btn-dark btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#filtros-catalogo" aria-expanded="false" aria-controls="filtros-catalogo">
+                <button id="filtrar-btn" class="btn btn-dark btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#filtros-catalogo" aria-expanded="false" aria-controls="filtros-catalogo">
+                    <i class="bi bi-filter"></i>
                     Filtrar
                 </button>
             </div>
             
         </div>
 
-<!-- FILTROS -->
+        <!-- FILTROS -->
+        
+        <section class="row my-5">
 
-        <div class="row my-5">
+            <aside id="filtros-catalogo" class="collapse text-start border bg-white col-12 col-md-3 col-lg-2 mb-3 mb-md-0">
 
-            <div id="filtros-catalogo" class="collapse text-start border-end border-info border-2 col-12 col-md-3 col-lg-2 ">
-                
-                <div class="container-fluid">
-
-                    <h4>Categoria</h4>
-
-                    <ul class="list-unstyled">
-
-                        <li><a href="#"> Ropa</a></li>
-                        <li><a href="#">Calzado</a></li>
-                        <li><a href="#">Accesorios</a></li>
-
-                    </ul>
-
-                </div>
-
-                <div class="container-fluid my-5">
-
-                    <h4>Filtros</h4>
+                <div class="row mt-1 gy-4 container">
 
                     <div>
-                        
-                        <p>Color</p>
+
+                        <h3>Categoria</h3>
 
                         <ul class="list-unstyled">
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="rojo" id="color-rojo">
-                                <label class="form-check-label" for="color-rojo">
-                                Rojo
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="blanco" id="color-blanco">
-                                <label class="form-check-label" for="color-blanco">
-                                Blanco
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="negro" id="color-negro">
-                                <label class="form-check-label" for="color-negro">
-                                Negro
-                                </label>
-                            </div>
+                            <li><a href="#">Ropa</a></li>
+                            <li><a href="#">Calzado</a></li>
+                            <li><a href="#">Deportivo</a></li>
 
                         </ul>
 
                     </div>
 
+                    <hr class="dropdown-divider">
+
                     <div>
 
-                        <p>Talle</p>
+                        <h3>Color</h3>
 
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="S" id="small">
-                            <label class="form-check-label" for="small">
-                            S
-                            </label>
+                        <div class="btn-group-vertical mb-4" role="group" aria-label="Basic checkbox toggle button group">
+
+                            <input type="checkbox" class="btn-check" id="color-rojo" autocomplete="off">
+                            <label class="btn btn-outline-danger" for="color-rojo">Rojo</label>
+                        
+                            <input type="checkbox" class="btn-check" id="color-azul" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="color-azul">Azul</label>
+                        
+                            <input type="checkbox" class="btn-check" id="color-celeste" autocomplete="off">
+                            <label class="btn btn-outline-info" for="color-celeste">Celeste</label>
+
+                            <input type="checkbox" class="btn-check" id="color-gris" autocomplete="off">
+                            <label class="btn btn-outline-secondary" for="color-gris">Gris</label>
+
+                            <input type="checkbox" class="btn-check" id="color-negro" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="color-negro">Negro</label>
+                            
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="M" id="medium">
-                            <label class="form-check-label" for="medium">
-                            M
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="L" id="large">
-                            <label class="form-check-label" for="large">
-                            L
-                            </label>
+
+                    </div>  
+
+                    <hr class="dropdown-divider">
+
+                    <div>
+
+                        <h3>Talle</h3>
+
+                        <div class="btn-group-vertical mb-4" role="group" aria-label="Basic checkbox toggle button group">
+
+                            <input type="checkbox" class="btn-check" id="talle-xs" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="talle-xs">XS</label>
+
+                            <input type="checkbox" class="btn-check" id="talle-s" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="talle-s">S</label>
+                        
+                            <input type="checkbox" class="btn-check" id="talle-m" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="talle-m">M</label>
+                        
+                            <input type="checkbox" class="btn-check" id="talle-l" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="talle-l">L</label>
+
+                            <input type="checkbox" class="btn-check" id="talle-xl" autocomplete="off">
+                            <label class="btn btn-outline-dark" for="talle-xl">XL</label>
+                            
                         </div>
 
                     </div>
 
+                    <hr class="dropdown-divider">
+
+                    <div>
+
+                        <h3>Sección</h3>
+
+                        <ul class="list-unstyled">
+
+                            <li><a href="hombre.html">Hombre</a></li>
+                            <li><a href="mujer.html">Mujer</a></li>
+                            <li><a href="niño.html">Niños</a></li>
+
+                        </ul>
+
+                    </div>
+
                 </div>
-
-                <div class="container-fluid">
-
-                    <h4>Sección</h4>
-
-                    <ul class="list-unstyled">
-
-                        <li><a href="hombre.html">Hombre</a></li>
-                        <li><a href="mujer.html">Mujer</a></li>
-                        <li><a href="niño.html">Niños</a></li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-
+            
+            </aside>
+            
 <!-- ARTICULOS -->
 
             <div class="col-12  col-md-9 col-lg-10 text-center">
                 
-                <div id="articulos-catalogo" class="row m-1 justify-content-center">
+                <div id="articulos-catalogo" class="row g-3">
 
-                    <div class="card">
-                        <a href="#"><img src="../images/camperaRosa.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/1HZySGk" target="blank">
+                                <img src="../images/camperaRosa.jpeg" class="card-img-top" alt="Campera puffer rosa chicle">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Campera puffer rosa chicle</h5>
+
+                                <p class="card-text">$3.800</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/1HZySGk" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/puffer1.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/1rna1CK" target="blank">
+                                <img src="../images/camperaRosaClaro.jpeg" class="card-img-top" alt="Campera puffer rosa pastel">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Campera puffer rosa pastel</h5>
+
+                                <p class="card-text">$3.800</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/1rna1CK" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/sweater.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/1L6z7q9" target="blank">
+                                <img src="../images/camperaCyan.jpeg" class="card-img-top" alt="Campera puffer turquesa">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Campera puffer turquesa</h5>
+
+                                <p class="card-text">$3.800</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/1L6z7q9" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/camperaRosa.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/1q5WNDc" target="blank">
+                                <img src="../images/sweater.jpeg" class="card-img-top" alt="Sweater print rosa">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Sweater print rosa</h5>
+
+                                <p class="card-text">$1.300</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/1q5WNDc" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/puffer1.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/1Bh8Xzu" target="blank">
+                                <img src="../images/sweaterRosaClaro.jpeg" class="card-img-top" alt="Sweater print rosa pastel">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Sweater print rosa pastel</h5>
+
+                                <p class="card-text">$1.300</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/1Bh8Xzu" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
+
                     </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/sweater.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
+
+                    <div class="col-6 col-sm-4">
+
+                        <div class="card">
+
+                            <a class="overflow-hidden" href="https://mpago.la/15SWJGH" target="blank">
+                                <img src="../images/puffer.jpeg" class="card-img-top" alt="Campera puffer animal print">
+                            </a>
+
+                            <div class="card-body">
+
+                                <h5 class="card-title text-uppercase">Campera puffer print</h5>
+
+                                <p class="card-text">$3.950</p>
+
+                                <a role="button" class="btn btn-info"> <i class="bi bi-star"></i> </a>
+
+                                <a href="https://mpago.la/15SWJGH" target="blank" class="btn btn-info">Comprar</a>
+
+                            </div>
+
                         </div>
-                    </div><div class="card">
-                        <a href="#"><img src="../images/camperaRosa.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/puffer1.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/sweater.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
-                    </div><div class="card">
-                        <a href="#"><img src="../images/camperaRosa.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/puffer1.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="#"><img src="../images/sweater.jpeg" class="card-img-top" alt="..."></a>
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">$9.999</p>
-                            <a href="#" class="btn btn-info">Comprar</a>
-                        </div>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
+        </section>
 
     </main>
 
     <!-- FOOTER -->
 
-    <footer class="py-3 mt-4 border-top">
+    <footer class="py-3 mt-md-4 border-top">
 
         <div class="py-5 my-4 container">
-    
+
             <!-- PRIMER FILA -->
-    
+
             <div id="footer__primer-fila" class="row ps-4 ps-sm-0">
-    
+
                 <div class="col-6 col-lg-2 mb-4">
-    
+
                     <h4>Menú</h4>
-    
+
                     <ul class="list-unstyled fs-4">
-    
+
                         <li class="mb-2">
                             <a href="../index.html">Inicio</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/catalogo.html">Catálogo</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/ayuda.html">Ayuda</a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="col-6 col-lg-2 mb-4">
-    
+
                     <h4>Catálogo</h4>
-    
+
                     <ul class="list-unstyled fs-4">
-    
+
                         <li class="mb-2">
                             <a href="../pages/hombre.html">Hombre</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/mujer.html">Mujer</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/niño.html">Niños</a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="col-6 col-lg-2 mb-4">
-    
+
                     <h4>Ayuda</h4>
-    
+
                     <ul class="list-unstyled fs-4">
-    
+
                         <li class="mb-2">
                             <a href="../pages/ayuda.html#preguntasFrecuentes">FAQ</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/ayuda.html#formasDePago">Formas de pago</a>
                         </li>
-    
+
                         <li class="mb-2">
                             <a href="../pages/ayuda.html#devoluciones">Devoluciones</a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="col-6 col-lg-2 mb-4">
-    
+
                     <h4>Mi perfil</h4>
-    
+
                     <ul class="list-unstyled fs-4">
-    
+
                         <li class="mb-2">
-                            <a href="../pages/registro.html">Mi cuenta</a>
+                            <a href="../pages/sesion.html">Mi cuenta</a>
                         </li>
-    
+
                         <li class="mb-2">
-                            <a href="../pages/404.html">Carrito</a>
+                            <a href="../pages/cart.html">Carrito</a>
                         </li>
-    
+
                         <li class="mb-2">
-                            <a href="../pages/404.html">Lista de deseos</a>
+                            <a href="../pages/favoritos.html">Lista de deseos</a>
                         </li>
-    
+
                     </ul>
-    
+
                 </div>
-    
+
                 <div class="col-9 col-lg-3 offset-lg-1 mt-4 mt-lg-0">
-    
+
                     <form method="GET">
-    
+
                         <h4>Newsletter</h4>
-    
+
                         <p class="fs-4">Suscribite y recibí nuestras promos exclusivas</p>
-    
+
                         <div class="d-flex w-100 gap-2">
-    
+
                             <label for="newsletter1" class="visually-hidden">Email</label>
                             <input id="newsletter1" type="email" class="form-control" placeholder="Email">
                             <button class="btn btn-rosa" type="submit">Suscribirme</button>
-    
+
                         </div>
-    
+
                     </form>
-    
+
                 </div>
-    
+
             </div>
-    
+
             <!-- SEGUNDA FILA -->
-    
+
             <div class="row">
-    
+
                 <div class="border-top my-3 pt-4">
-    
+
                     <h4 class="text-center">Seguinos en las redes</h4>
-    
+
                     <ul class="col nav justify-content-center">
-    
+
                         <li class="nav-item">
-    
-                            <a href="https://instagram.com/mora._indumentaria" target="_blank" class="px-3 text-muted">
+
+                            <a href="https://instagram.com/mora._indumentaria" target="_blank" class="mx-3 text-muted">
                                 <i class="bi bi-instagram footer__iconos" role="img" aria-label="Instagram"></i> 
                             </a>
-    
+
                         </li>
         
                         <li class="nav-item">
-    
-                            <a href="https://www.facebook.com/mora.ind.39" target="_blank" class="px-3 text-muted">
+
+                            <a href="https://www.facebook.com/mora.ind.39" target="_blank" class="mx-3 text-muted">
                                 <i class="bi bi-facebook footer__iconos" role="img" aria-label="Facebook"></i>
                             </a>
-    
+
                         </li>
         
                     </ul>
-    
+
                 </div>
-    
+
             </div>
-    
+
             <!-- TERCER FILA -->
-    
+
             <div class="row border-top my-3 py-3">
-    
+
                 <p class="col text-start text-muted fs-4">© 2021 Hezequiel Castro</p>
-    
+
             </div> 
-    
+
         </div>
-    
+
     </footer>
 
-    <script src="../js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    
     
     <script src="../js/bootstrap.min.js"></script>
 

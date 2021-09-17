@@ -49,3 +49,14 @@ h1, h2, h3, h4 {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
+
+.display-1 {
+    z-index: 1;
+}
+
+.spinner-lg {
+    width: 13rem;
+    height: 13rem;
+    border: .6em solid currentColor;
+    border-right-color: transparent;
+}

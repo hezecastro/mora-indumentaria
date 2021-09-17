@@ -40,9 +40,14 @@ $tema-colores-hover:(
 
 .btn-dark {
     &:hover {
-        color: black;
+        color: #000;
         background-color: #fff;
     }
+}
+
+.btn-info:hover{
+    color: $cyan;
+    background-color: #fff;
 }
 
 //BOTONES BORDEADOS
@@ -55,4 +60,3 @@ $tema-colores-hover:(
         @include botones-outline-hover($valor)
     }
 }
-

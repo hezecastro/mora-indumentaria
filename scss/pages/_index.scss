@@ -7,58 +7,35 @@
     }
 }
 
+@mixin secciones {
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    background-position-x: center;
+    @media (min-width: 992px) and (orientation: landscape) {
+        background-size: 100%;
+    }
+}
+
 // ----------- //
 
-.destacados {
-    width: 30rem;
-    margin: 1px;
-    transition: width 0.3s;
-        &:hover {
-        opacity: 0.85;
-        }
-}
 
-.portada {
-    width: 39px;
-    height: 70vh;
-}
+/* Carrusel */
 
-.galeria {
-    font-size: 3rem;
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.main__h1 {
-    color: $rosa-main
-}
-
-.main__h2 {
-    color: $rosa-second
-}
-
-.sticky-bottom {
-    position: -webkit-sticky;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    z-index: 1020;
-}
-
-/* Carousel base class */
 .carousel {
     margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
+
 .carousel-caption {
     bottom: 3rem;
     z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+
 .carousel-item {
     height: 78.2vh;
 }
@@ -107,14 +84,100 @@
     }
 }
 
-.md-hide-down {
-    @media (max-width: 767.98px) {
+.lg-hide-down {
+    @media (max-width: 991.98px) {
         display: none;
     }
 }
 
-.md-hide-up {
-    @media (min-width: 767.98px) {
+.lg-hide-up {
+    @media (min-width: 992px) {
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        flex: 1;
+    }
+}
+
+.pantalla-negra {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+.centrado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hombre {
+    @include secciones;
+    background-image: url("../images/index-man.jpg");
+    background-position-x: 28%;
+    @media (min-width: 992px) and (orientation: landscape) {
+        background-size: 160%;
+    }
+    @media (min-width: 1200px) and (orientation: landscape) {
+        background-size: 136%;
+    }
+}
+
+.mujer {
+    @include secciones;
+    background-image: url("../images/index-woman.jpg");
+}
+
+.niños {
+    @include secciones;
+    background-image: url("../images/index-kids.jpg");
+}
+
+.deportivo {
+    @include secciones;
+    background-image: url("../images/index-deportivo1.jpg");
+}
+
+.calzado {
+    @include secciones;
+    background-image: url("../images/index-calzado.jpg");
+    background-position: center;
+    @media (min-width: 992px) and (orientation: landscape){
+        background-size: 120%;
+    }
+    @media (min-width: 1200px) and (orientation: landscape){
+        background-size: 102%;
+    }
+}
+
+.secciones {
+    height: 80vh;
+}
+
+@media (min-width: 992px) and (orientation: landscape) {
+    .secciones:hover{
+        background-size: 110%;
+        &.hombre {
+            background-size: 170%;
+        }
+        &.calzado {
+            background-size: 130%;
+        }
+    }
+}
+
+@media (min-width: 1200px) and (orientation: landscape) {
+    .secciones:hover{
+        background-size: 110%;
+        &.hombre {
+            background-size: 146%;
+        }
+        &.calzado {
+            background-size: 112%;
+        }
     }
 }

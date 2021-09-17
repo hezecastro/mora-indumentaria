@@ -11,8 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="../images/logovector.svg" size="any">
+    
+    <meta name="description" content="Tu pago está en proceso.">
+    
+    <meta name="keywords" content="TIENDA, ONLINE, ROPA, INDUMENTARIA, PAGO, ESPERA, PROCESANDO">
 
-    <title>Registrate | Mora Indumentaria</title>
+    <title>Pago en proceso | Mora Indumentaria</title>
 
     <link rel="stylesheet" href="../css/bootstrap-icons.css">
 
@@ -29,132 +33,134 @@
     <header class="border-bottom">
 
         <nav class="navbar-expand-lg navbar navbar-light">
-
+    
             <div class="container">
-
+    
                 <a class="navbar-brand" href="../index.html">
-
+    
                     <img class="img-fluid header__logo" src="../images/logovector.svg" alt="Logotipo de Mora Indumentaria">
-
+    
                 </a>
-
+    
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-
+    
                     <span class="navbar-toggler-icon"></span>
-
+    
                 </button>
                 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="visibility: hidden;" aria-hidden="true">
-
+    
                     <div class="offcanvas-header">
-
+    
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-
+    
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-
+    
                     </div>
-
+    
                     <div class="offcanvas-body">
                         
                         <ul class=" navbar-nav justify-content-start flex-grow-1 pe-3">
-
+    
                             <li class="nav-item">
-
+    
                                 <a class="nav-link" href="../index.html">Inicio</a>
-
+    
                             </li>
-
+    
                             <li class="nav-item">
-
+    
                                 <a class="nav-link" href="hombre.html">Hombre</a>
-
+    
                             </li>
-
+    
                             <li class="nav-item">
-
+    
                                 <a class="nav-link" href="mujer.html">Mujer</a>
-
+    
                             </li>
-
+    
                             <li class="nav-item">
-
+    
                                 <a class="nav-link" href="niño.html">Niños</a>
-
+    
                             </li>
                             
                         </ul>
-
+    
                         <hr class="dropdown-divider">
-
+    
                         <ul class="mb-3 mb-md-0 fs-3 navbar-nav justify-content-md-end flex-grow-1 pe-3">
-
+    
                             <li class="nav-item">
-
+    
                                 <a class="nav-link" href="favoritos.html">
-
+    
                                     <i class="bi bi-star"></i>
-
+    
                                     <span class="lg-hide-up">Lista de deseos</span>
-
+    
                                 </a>
-
+    
                             </li>
-
+    
                             <li class="nav-item mx-lg-2">
-
+    
                                 <a class="nav-link" href="cart.html">
-
+    
                                     <i class="bi bi-cart2"></i>
-
+    
                                     <span class="lg-hide-up">Carrito</span>
-
+    
                                 </a>
-
+    
                             </li>
-
+    
                             <li class="nav-item">
-
-                                <a class="nav-link" href="sesion.html">
-
+    
+                                <a class="nav-link" aria-current="page" href="sesion.html">
+    
                                     <i class="bi bi-person-circle"></i>
-
+    
                                     <span class="lg-hide-up">Mi cuenta</span>
-
+    
                                 </a>
-
+    
                             </li>
                         
                         </ul>
-
+    
                         <form class="d-flex mt-1">
-
+    
                             <input class="form-control me-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
-
+    
                             <button class="btn btn-rosa" type="submit">Buscar</button>
-
+    
                         </form>
-
+    
                     </div>
-
+    
                 </div>
-
+    
             </div>
-
+    
         </nav>
-
+    
     </header>
 
-    <!-- ERROR 404 -->
+<!-- PRINCIPAL -->
 
     <section class="container text-center my-5 bg-white border py-4">
 
-        <i class="bi bi-emoji-dizzy error__icono"></i>
-        <h1 class="display-2">ERROR 404</h1>
-        <p class="fs-1">Página no encontrada</p>
-        <a href="../index.html" class="btn btn-lg btn-rosa my-3">Volver al menú</a>
-
+        <div class="spinner-border spinner-lg"></div>
+        <h1 class="display-2">¡Gracias por elegirnos!</h1>
+        <p class="fs-1">Estamos procesando el pago</p>
+        <a href="catalogo.html" target="blank" class="btn btn-lg btn-rosa my-3">Seguir comprando</a>
+        
     </section>
     
+        </body>
+
     <!-- FOOTER -->
 
     <footer class="py-3 mt-md-4 border-top">
@@ -318,7 +324,7 @@
         </div>
 
     </footer>
-
+    
     <script src="../js/bootstrap.min.js"></script>
 
 </body>

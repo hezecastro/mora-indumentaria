@@ -1,21 +1,3 @@
-.login {
-    padding: 15px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-    background-color: white;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    line-height: 30px;
-        a {
-            color: $rosa-main
-        }
-        &:hover{
-            color: black;
-        }
-}
-
 .form-signin {
     width: 100%;
     max-width: 330px;

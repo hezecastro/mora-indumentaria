@@ -1,15 +1,17 @@
-#ayuda__pagina {
-    h2 {
-        color: $rosa-second
-    }
-    h3 {
-        color: $rosa-third;
+#accordionFlushExample {
+    p {
+        color: $gris;
     }
     a {
-        color: $rosa-main;
-        &:hover{
-            color: black;
-        }
+        text-decoration: underline;
     }
 }
 
+.accordion-button {
+    font-size: 1.9rem;
+    padding: 20px;
+}
+
+#accordionFlushExample .accordion-body, #accordionFlushExample .list-group-item{
+    background-color: $gris-claro;
+}
