@@ -4,7 +4,7 @@ Página web de la tienda online Mora Indumentaria, proyecto realizado en el curs
 
 ## 🔗 Links
 
-[![sitio](https://img.shields.io/badge/ver_sitio-000?style=for-the-badge&logo=chainlink&logoColor=white)](https://mora-indumentaria.000webhostapp.com/)
+[![sitio](https://img.shields.io/badge/ver_sitio-000?style=for-the-badge&logo=chainlink&logoColor=white)](https://moraind.000webhostapp.com/)
 [![portfolio](https://img.shields.io/badge/mi_portfolio-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/hezecastro/)
 
 ## Lenguajes y librerías utilizadas
